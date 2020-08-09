@@ -2,22 +2,21 @@ body {
     margin: 0;
 }
 
-.border {
-    border: 1px solid blue;
-}
-
 ul {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style-type: none;
+    padding-left: 0px;
 }
 
 li {
     list-style-type: none;
+    padding: 10px;
 }
+
 .logo {
     text-align: center;
-    border: 1px solid green;
     margin: 0 auto;
     padding: 0;
     width: 340px;
@@ -25,52 +24,162 @@ li {
 }
 
 nav {
-    width: 60vw;
-    height: 200px;
-    border: 1px solid salmon;
+    width: 60%;
     margin: 0 auto;
-    display: flex;}
+    display: flex;
+    justify-content: space-between;
+  }
 
 main {
-    height: 20vh;
+    height: 5vh;
 }
 
 .feature {
     width: 90vw;
     margin: 0 auto;
     border: 1px solid pink;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.language {
+  position: absolute;
+  font-size: 10px;
+  top: 55%;
+  left: 20%;
+  text-align: left;
+  width: 50%;
 }
 
 footer {
-    font-size: 25px;
+    color: black;
+    font-size: 20px;
     width: 90vw;
     margin: 0 auto;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .story {
     margin: 0 auto;
+    padding-bottom: 20px;
     width: 60vw;
     text-align: center;
 }
 
 .storybox {
-    border: 1px solid purple;
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
     text-align: center;
 }
 
+.icons {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons > p {
+    width: max-content;
+    border: 1px solid red;
+    font-size: 10px;
+}
 form {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 img {
-    width: 30%;
+    width: 100%;
+}
+
+.logo > img {
+    width: 25%;
     margin: 0 auto;
+    display: block;
     text-align: center;
+}
+
+.personas {
+  width: 100%;
+  object-fit: fill;
+}
+
+#submit{
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  width: max-content;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 28px 12px;
+}
+
+a {
+  color: black;
+  font-weight: bolder;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+}
+
+a:active {
+  color: aqua;
+}
+
+.textinput {
+  width: 50%;
+  margin-bottom: 5px;
+}
+
+h1, .more {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  width: max-content;
+  text-align: center;
+  margin: 5px auto;
+  padding: 15px 28px 12px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.posts > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts > ul > li {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 30% 70%;
+}
+
+.figure > img {
+  width: 100%;
+  float: left;
+  border: 1px solid black;
+}
+
+.figure {
+  width: 40%;
+}
+
+.wording {
+  text-align: center;
+  width: 55%;
+  margin: auto;
 }
 
 /* Gallery styling */

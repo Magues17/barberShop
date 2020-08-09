@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,23 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contact Me</title>
 </head>
-<header>
-    <nav>
-        <div class="logo">Mullet</div>
-        <ul>
-            <li><a href="about.html"></a>About</li>
-            <li><a href="contact.html"></a>Contact</li>
-            <li><a href="gallery.html"></a>Gallery</li>
-            <li><a href="News"></a>News</li>
-        </ul>
-    </nav>
-</header>
 <body>
+    <header>
+        <a href="index.html" class="logo">
+			<img src="images/mullets.jpeg" alt="Mullet Logo">
+		</a>
+        <nav>
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+        </nav>
+    </header>
     <form formaction="./result.html">
     <h1>LET'S KEEP IN TOUCH</h1>
     <div>
         <label></label><br>
-        <input type="fname" class="textinput" name="first" placeholder="NAME"><br>
+        <input type="fname" class="textinput" name="first" placeholder="NAME" required><br>
     </div>
     <label for="email"></label><br>
     <input type='email' class="textinput" name="email" id="email" placeholder="EMAIL" minlength="5" maxlength="50" required><br>
@@ -31,9 +34,9 @@
         <input type="number" class="textinput" name="phone" placeholder="PHONE NUMBER"><br>
     </div>
     <label for="message"></label><br>
-    <textarea name="message" id="message" placeholder="MESSAGE" minlength="20" maxlength="500" rows="5" cols="50"></textarea><br>
-    <input type="submit" name="submit" id="submit">
-    <form></form>
+    <textarea name="message" class="textinput" id="message" placeholder="MESSAGE" minlength="20" maxlength="500" rows="5" cols="50"></textarea><br>
+    <input type="submit" value= "Send" name="submit" id="submit">
+    </form>
 </body>
 <footer>
     <div class="icons">
