@@ -30,14 +30,9 @@ nav {
     justify-content: space-between;
   }
 
-main {
-    height: 5vh;
-}
-
 .feature {
     width: 90vw;
     margin: 0 auto;
-    border: 1px solid pink;
     position: relative;
     text-align: center;
     color: white;
@@ -45,32 +40,38 @@ main {
 
 .language {
   position: absolute;
-  font-size: 10px;
-  top: 55%;
-  left: 20%;
+  font-size: 14px;
+  top: 15%;
+  left: 5%;
   text-align: left;
-  width: 50%;
 }
 
 footer {
-    color: black;
+    background-color: grey;
+    color: white;
     font-size: 20px;
     width: 90vw;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    margin: 10px auto;
+    padding-top: 10px;
+}
+
+.space {
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .story {
     margin: 0 auto;
-    padding-bottom: 20px;
     width: 60vw;
     text-align: center;
 }
 
 .storybox {
     margin: 0 auto;
+    height: 100%;
+    padding: 5px;
     text-align: center;
 }
 
@@ -83,9 +84,14 @@ footer {
 
 .icons > p {
     width: max-content;
-    border: 1px solid red;
-    font-size: 10px;
+    font-size: 18px;
 }
+
+.storybox > p {
+  margin: 0 auto;
+  width: 60%;
+}
+
 form {
     text-align: center;
     padding-bottom: 20px;
@@ -96,15 +102,40 @@ img {
 }
 
 .logo > img {
-    width: 25%;
+    width: 20%;
     margin: 0 auto;
     display: block;
     text-align: center;
 }
 
 .personas {
-  width: 100%;
-  object-fit: fill;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.persona {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+}
+
+.persona span {
+  color: white;
+  background-color: black;
+  opacity: 50%;
+}
+
+#persona1 {
+  background-image: url(images/in-progress.jpg);
+}
+
+#persona2 {
+  background-image: url(images/finished.jpg)
+}
+
+#persona3 {
+  background-image: url(images/fish.jpg);
 }
 
 #submit{
@@ -137,10 +168,13 @@ a:active {
 .textinput {
   width: 50%;
   margin-bottom: 5px;
+  border-width: 2px;
+  appearance: textfield;
+  border-style: inset;
 }
 
-h1, .more {
-  font-size: 20px;
+h1 {
+  font-size: 25px;
   background-color: black;
   color: white;
   width: max-content;
@@ -149,9 +183,17 @@ h1, .more {
   padding: 15px 28px 12px;
 }
 
+h2 {
+  padding: 8px;
+}
+
 h3 {
   font-size: 24px;
   font-weight: bolder;
+}
+
+.posts {
+  padding: 2%;
 }
 
 .posts > ul {
@@ -164,6 +206,7 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-basis: 30% 70%;
+  margin: 10px;
 }
 
 .figure > img {
@@ -182,6 +225,25 @@ h3 {
   margin: auto;
 }
 
+.dark {
+  color: black;
+  background: white;
+}
+.light {
+  color: white;
+  background: black;
+}
+
+.more {
+  font-size: 14px;
+  color: white;
+  width: max-content;
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px;
+  background: turquoise;
+}
+
 /* Gallery styling */
 .row {
     display: flex;
@@ -190,13 +252,13 @@ h3 {
   }
   
   /* Create four equal columns that sits next to each other */
-  .column {
+.column {
     flex: 32%;
     max-width: 32%;
     padding: 0 4px;
   }
   
-  .column img {
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
@@ -215,6 +277,22 @@ h3 {
     .column {
       flex: 100%;
       max-width: 100%;
+    }  
+
+    .language, .more {
+      font-size: 8px;
+      top: 5%;
+      padding: 2px;
+    }  
+
+    .personas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .persona {
+      margin: 5px auto;
     }
   }
 
