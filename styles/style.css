@@ -1,41 +1,41 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding-left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 li {
-    list-style-type: none;
-    padding: 10px;
+  list-style-type: none;
+  padding: 10px;
 }
 
 .logo {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-    width: 340px;
-    height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 340px;
+  height: 100px;
 }
 
 nav {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 
 .feature {
-    width: 90vw;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    color: white;
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .language {
@@ -47,12 +47,12 @@ nav {
 }
 
 footer {
-    background-color: grey;
-    color: white;
-    font-size: 20px;
-    width: 90vw;
-    margin: 10px auto;
-    padding-top: 10px;
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  width: 90vw;
+  margin: 10px auto;
+  padding-top: 10px;
 }
 
 .space {
@@ -63,49 +63,50 @@ footer {
 }
 
 .story {
-    margin: 0 auto;
-    width: 60vw;
-    text-align: center;
+  margin: 0 auto;
+  width: 60vw;
+  text-align: center;
 }
 
 .storybox {
-    margin: 0 auto;
-    height: 100%;
-    padding: 5px;
-    text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5px;
+  text-align: center;
+  
 }
 
 .icons {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.icons > p {
-    width: max-content;
-    font-size: 18px;
+.icons>p {
+  width: max-content;
+  font-size: 18px;
 }
 
-.storybox > p {
+.storybox>p {
   margin: 0 auto;
   width: 60%;
 }
 
 form {
-    text-align: center;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
-img {
-    width: 100%;
-}
+/* img {
+  width: 80%;
+} */
 
-.logo > img {
-    width: 8%;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
+.logo>img {
+  width: 8%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 .personas {
@@ -138,7 +139,7 @@ img {
   background-image: url(images/fish.jpg);
 }
 
-#submit{
+#submit {
   font-size: 14px;
   background-color: black;
   color: white;
@@ -196,12 +197,12 @@ h3 {
   padding: 2%;
 }
 
-.posts > ul {
+.posts>ul {
   display: flex;
   flex-direction: column;
 }
 
-.posts > ul > li {
+.posts>ul>li {
   border: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -209,7 +210,7 @@ h3 {
   margin: 10px;
 }
 
-.figure > img {
+.figure>img {
   width: 100%;
   float: left;
   border: 1px solid black;
@@ -229,6 +230,7 @@ h3 {
   color: black;
   background: white;
 }
+
 .light {
   color: white;
   background: black;
@@ -246,92 +248,99 @@ h3 {
 
 /* Gallery styling */
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
 .column {
-    flex: 32%;
-    max-width: 32%;
-    padding: 0 4px;
-  }
-  
+  flex: 32%;
+  max-width: 32%;
+  padding: 0 4px;
+}
+
 .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+.menu-item {
+display: flex;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }  
+}
 
-    .language, .more {
-      font-size: 8px;
-      top: 5%;
-      padding: 2px;
-    }  
-
-    .personas {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .persona {
-      margin: 5px auto;
-    }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 
-  .container {
-    position: relative;
-    width: 100%;
+  .language,
+  .more {
+    font-size: 8px;
+    top: 5%;
+    padding: 2px;
   }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
+
+  .personas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background: rgba(0, 0, 0, 0.5);
+
+  .persona {
+    margin: 5px auto;
   }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
