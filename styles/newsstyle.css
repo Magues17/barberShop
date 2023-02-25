@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.logo {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 340px;
+  height: 100px;
+}
+
+nav {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.language {
+  position: absolute;
+  font-size: 14px;
+  top: 15%;
+  left: 5%;
+  text-align: left;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  width: 90vw;
+  margin: 10px auto;
+  padding-top: 10px;
+}
+
+.space {
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.story {
+  margin: 0 auto;
+  width: 60vw;
+  text-align: center;
+}
+
+.storybox {
+  margin: 0 auto;
+  height: 100%;
+  padding: 5px;
+  text-align: center;
+  
+}
+
+.icons {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons>p {
+  width: max-content;
+  font-size: 18px;
+}
+
+.storybox>p {
+  margin: 0 auto;
+  width: 60%;
+}
+
+form {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 80%;
+}
+
+.logo>img {
+  width: 8%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.personas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.persona {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+}
+
+.persona span {
+  color: white;
+  background-color: black;
+  opacity: 50%;
+}
+
+#persona1 {
+  background-image: url(images/in-progress.jpg);
+}
+
+#persona2 {
+  background-image: url(images/finished.jpg)
+}
+
+#persona3 {
+  background-image: url(images/fish.jpg);
+}
+
+#submit {
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  width: max-content;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 28px 12px;
+}
+
+a {
+  color: black;
+  font-weight: bolder;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+}
+
+a:active {
+  color: aqua;
+}
+
+.textinput {
+  width: 50%;
+  margin-bottom: 5px;
+  border-width: 2px;
+  appearance: textfield;
+  border-style: inset;
+}
+
+h1 {
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  width: max-content;
+  text-align: center;
+  margin: 5px auto;
+  padding: 15px 28px 12px;
+}
+
+h2 {
+  padding: 8px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.posts {
+  padding: 2%;
+}
+
+.posts>ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts>ul>li {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 30% 70%;
+  margin: 10px;
+}
+
+.figure>img {
+  width: 100%;
+  float: left;
+  border: 1px solid black;
+}
+
+.figure {
+  width: 40%;
+}
+
+.wording {
+  text-align: center;
+  width: 55%;
+  margin: auto;
+}
+
+.dark {
+  color: black;
+  background: white;
+}
+
+.light {
+  color: white;
+  background: black;
+}
+
+.more {
+  font-size: 14px;
+  color: white;
+  width: max-content;
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px;
+  background: turquoise;
+}
+
+/* Gallery styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 32%;
+  max-width: 32%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+.menu-item {
+display: flex;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .language,
+  .more {
+    font-size: 8px;
+    top: 5%;
+    padding: 2px;
+  }
+
+  .personas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .persona {
+    margin: 5px auto;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
