@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  /* i think adding a grid or flex would help with some of the weirdness around element sizes */
+  /* also helps with responsiveness */
 }
 
 ul {
@@ -50,9 +55,25 @@ footer {
   background-color: grey;
   color: white;
   font-size: 20px;
-  width: 90vw;
-  margin: 10px auto;
+  /* width: 90vw;
+  margin: 10px auto; */
   padding-top: 10px;
+  margin-top:60px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+  }
+  .feature {
+    width: 100%;
+  }
+  .feature img {
+    width: 100%;
+  }
+  /* this is a few adjustments to get rid of the horizontal scroll */
 }
 
 .space {
